@@ -1,7 +1,7 @@
 {
-    "url": "<app-url>",                        
-    "name": "<app-name>",                      
-    "iconUrl": "<app-icon-url>",               
-    "termsOfUseUrl": "<terms-of-use-url>",     
-    "privacyPolicyUrl": "<privacy-policy-url>" 
+    "url": "https://chibykes.github.io/garri_token_bot/",                        
+    "name": "GARRI Token",                      
+    "iconUrl": "https://chibykes.github.io/garri_token_bot/token.png",               
+    "termsOfUseUrl": "https://chibykes.github.io/garri_token_bot/#",     
+    "privacyPolicyUrl": "https://chibykes.github.io/garri_token_bot/#" 
 }
