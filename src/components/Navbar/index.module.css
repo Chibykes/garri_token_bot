@@ -1,7 +1,11 @@
 .navbar{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    flex-shrink: 0;
+    background-color: #000;
 }
 
 .navigation__list{

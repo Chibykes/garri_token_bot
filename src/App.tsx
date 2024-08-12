@@ -1,12 +1,13 @@
 import "./App.css";
 
+import { TonConnectUIProvider } from "@tonconnect/ui-react";
 import { createContext, useState } from "react";
 import Dashboard from "./components/Dashboard";
 import Navbar from "./components/Navbar";
-import { AppContextInterface, NaviagtionTypes } from "./types/app";
 import Tasks from "./components/Tasks";
-import { TonConnectUIProvider } from "@tonconnect/ui-react";
 import Wallet from "./components/Wallet";
+import useNavHeight from "./hooks/useNavHeight";
+import { AppContextInterface, NaviagtionTypes } from "./types/app";
 
 const AppContext = createContext<AppContextInterface | Record<string, never>>(
   {}
@@ -32,15 +33,23 @@ function App() {
     setUser,
   };
 
+  const height = useNavHeight(0, [currentTab]);
+
   return (
     <TonConnectUIProvider manifestUrl="https://<YOUR_APP_URL>/tonconnect-manifest.json">
       <AppContext.Provider value={values}>
-        <main className="wrapper">
+        <main
+          className="wrapper"
+          style={{
+            paddingBottom: `calc(1rem + ${height}px)`,
+          }}
+        >
           {currentTab === "home" && <Dashboard />}
           {currentTab === "tasks" && <Tasks />}
-          {currentTab === "pals" && "Refferals"}
+          {currentTab === "pals" && "Refferals coming soon"}
           {currentTab === "wallet" && <Wallet />}
           <Navbar />
+          {/* <div className="py-8"></div> */}
         </main>
       </AppContext.Provider>
     </TonConnectUIProvider>

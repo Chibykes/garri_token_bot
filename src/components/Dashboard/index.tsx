@@ -1,9 +1,13 @@
+import { retrieveLaunchParams } from "@telegram-apps/sdk-react";
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import tokenImage from "../../assets/token2.png";
 import styles from "./index.module.css";
 
+
 function Dashboard() {
+  const { initData } = retrieveLaunchParams();
+
   const { totalTokens, setTotalTokens } = useContext(AppContext);
 
   return (
@@ -20,6 +24,10 @@ function Dashboard() {
           alt="GARRI"
           onClick={() => setTotalTokens((n) => n + 1)}
         />
+
+        <div className={`${styles.token__amount} text-white`}>
+          <small className={styles.token__name}>@{initData?.user?.username}</small>
+        </div>
       </div>
     </div>
   );

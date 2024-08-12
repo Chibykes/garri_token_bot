@@ -35,11 +35,59 @@ function Tasks() {
       description: "Follow $GARRI on X.com",
       points: 500,
     },
+    {
+      image: "",
+      link: "https://x.com/$GARRI",
+      description: "Follow $GARRI on X.com",
+      points: 500,
+    },
+    {
+      image: "",
+      link: "https://x.com/$GARRI",
+      description: "Follow $GARRI on X.com",
+      points: 500,
+    },
+    {
+      image: "",
+      link: "https://x.com/$GARRI",
+      description: "Follow $GARRI on X.com",
+      points: 500,
+    },
+    {
+      image: "",
+      link: "https://x.com/$GARRI",
+      description: "Follow $GARRI on X.com",
+      points: 500,
+    },
+    {
+      image: "",
+      link: "https://x.com/$GARRI",
+      description: "Follow $GARRI on X.com",
+      points: 500,
+    },
+    {
+      image: "",
+      link: "https://x.com/$GARRI",
+      description: "Follow $GARRI on X.com",
+      points: 500,
+    },
+    {
+      image: "",
+      link: "https://x.com/$GARRI",
+      description: "Follow $GARRI on X.com",
+      points: 500,
+    },
+    {
+      image: "",
+      link: "https://x.com/$GARRI",
+      description: "Follow $GARRI on X.com",
+      points: 500,
+    },
   ]);
 
   return (
     <div className={styles.container}>
-      <div className="py-12 text-left text-white space-y-8">
+      <div className="py-12 text-left text-white space-y-8 h-full overflow-auto">
         <div className="">
           <p className="font-bold text-2xl">
             GARRI Community Tasks <sup>{communityTask.length}</sup>

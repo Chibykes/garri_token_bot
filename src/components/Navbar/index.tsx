@@ -99,7 +99,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={styles.navbar}>
+    <nav id="navbar" className={`${styles.navbar} space-y-4`}>
       {currentTab === "home" && (
         <div className="">
           {farmingStatus === "not started" ? (
