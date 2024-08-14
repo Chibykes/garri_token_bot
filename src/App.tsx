@@ -36,7 +36,7 @@ function App() {
   const height = useNavHeight(0, [currentTab]);
 
   return (
-    <TonConnectUIProvider manifestUrl="ttps://chibykes.github.io/garri_token_bot/tonconnect-manifest.json">
+    <TonConnectUIProvider manifestUrl="https://chibykes.github.io/garri_token_bot/tonconnect-manifest.json">
       <AppContext.Provider value={values}>
         <main
           className="wrapper"
